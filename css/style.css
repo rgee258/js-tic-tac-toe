@@ -49,3 +49,117 @@ table {
   border-spacing: 0;
 }
 
+/* General */
+
+body {
+  background-color: #21212d;
+}
+
+/* Header */
+
+h1 {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-variant: small-caps;
+  font-size: 3rem;
+  color: yellow;
+}
+
+/* Container Styling */
+
+/* Info */
+
+.info {
+  width: 15%;
+  margin: auto;
+  padding: .5% 1%;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: 'Archivo Narrow', sans-serif;
+  word-wrap: break-word;
+  border-radius: 3px;
+  background-color: #d9d9d9;
+}
+
+/* Board */
+
+.board {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 3% auto;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 5rem;
+  color: #ff3300;
+  text-transform: uppercase;
+  background-color: #d9d9d9;
+}
+
+.board [class|="pos"] {
+  flex-basis: 33.333333%;
+  width: 100%;
+  padding: 7% 0;
+  text-align: center;
+  outline: 3px solid #21212d;
+}
+
+.empty:hover {
+  cursor: pointer;
+}
+
+/* Controls */
+
+.controls {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  padding: 1%;
+  box-sizing: border-box;
+  border-radius: 7px;
+  font-family: 'Archivo Narrow', sans-serif;
+  background-color: #d9d9d9;
+}
+
+.controls div {
+  text-align: center;
+}
+
+/* Controls - Forms */
+
+form input {
+  margin-top: 5%;
+  text-align: center;
+}
+
+/* Controls - Button */
+
+.new-game {
+  align-self: center;
+}
+
+.new-game .btn {
+  padding: 10px 20px;
+  border: 1px solid #21212d;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  background-color: #99ff66;
+}
+
+.new-game .btn:hover {
+  padding: 9.5px 19.5px;
+  border: 1.5px solid #21212d;
+  background-color: #77ff33;
+  cursor: pointer;
+}
+
+/* Display Shortcuts */
+
+.hide {
+  display: none;
+}
